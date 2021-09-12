@@ -3,6 +3,7 @@ import axios from 'axios';
 import moment from 'moment';
 
 
+
 export default class StockItemHome extends Component{
 
   constructor(props){
@@ -134,7 +135,10 @@ export default class StockItemHome extends Component{
         </table>
 
         <button className="btn btn-success"><a href="/addstockitems" style={{textDecoration:'none',color:'white'}}>Add New Item</a></button>
+        &nbsp;
+        <button className="btn btn-success"><a href="/inventoryreport" style={{textDecoration:'none',color:'white'}}> Generate Report</a></button>
       </div>
+      
     )
   }
 }

@@ -11,6 +11,8 @@ import I_OrderCreate from './hotelmanagementcomponents/I_OrderCreate';
 import SupplierDetails from './hotelmanagementcomponents/SupplierDetails';
 import SupplierEdit from './hotelmanagementcomponents/SupplierEdit';
 import SupplierCreate from './hotelmanagementcomponents/SupplierCreate';
+import InventoryPDF from './hotelmanagementcomponents/InventoryPDF';
+
 
 export default class App extends Component{
   render(){
@@ -39,6 +41,8 @@ export default class App extends Component{
        <Route path="/supplierEdit/:id" component={SupplierEdit}></Route>
 
        <Route path="/addsuppliers" component={SupplierCreate}></Route>
+
+       <Route path="/inventoryreport" component={InventoryPDF}></Route>
 
      </div>
      </BrowserRouter>
